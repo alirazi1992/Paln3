@@ -778,10 +778,12 @@ function TechnicianDashboardView() {
                   </div>
 
                   <button
+                    type="button"
                     onClick={() => navigate("/technician-calendar")}
-                    className="px-3 py-1 rounded-full text-[11px] bg-blue-600 text-white hover:bg-blue-700 shadow-sm"
+                    aria-label="مشاهده تقویم تکنسین‌ها"
+                    className="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center shadow-sm hover:bg-blue-700 transition-colors"
                   >
-                    تقویم پرونده‌ها
+                    <Icon name="calendar" size={16} />
                   </button>
                 </div>
               </div>

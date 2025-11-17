@@ -14,11 +14,7 @@ import {
 import { AuditEvent } from "../features/projects/types";
 
 import dayjs, { Dayjs } from "dayjs";
-import jalaliday from "jalaliday";
-import localizedFormat from "dayjs/plugin/localizedFormat";
 
-dayjs.extend(jalaliday);
-dayjs.extend(localizedFormat);
 dayjs.locale("fa");
 
 const toJ = (d: string | number | Date | Dayjs) => dayjs(d).calendar("jalali");

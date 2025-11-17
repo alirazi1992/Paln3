@@ -7,6 +7,7 @@ export default defineConfig({
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "src"),
+      dayjs: path.resolve(__dirname, "src/src/lib/dayjs.ts"),
     },
   },
   server: {
