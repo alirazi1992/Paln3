@@ -13,6 +13,10 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
+    "baseUrl": ".",
+    "paths": {
+      "dayjs": ["src/src/lib/dayjs"]
+    },
 
     /* Linting */
     "strict": true,

@@ -1,18 +1,7 @@
 // src/src/pages/Calendar.tsx
 import React, { useMemo, useState } from "react";
 import dayjs, { Dayjs } from "dayjs";
-import jalaliday from "jalaliday";
-import isBetween from "dayjs/plugin/isBetween";
-import localizedFormat from "dayjs/plugin/localizedFormat";
-import customParseFormat from "dayjs/plugin/customParseFormat";
-import weekday from "dayjs/plugin/weekday";
 import { AppShell } from "../components/layout/AppShell";
-
-dayjs.extend(jalaliday);
-dayjs.extend(isBetween);
-dayjs.extend(localizedFormat);
-dayjs.extend(customParseFormat);
-dayjs.extend(weekday);
 
 // Persian locale + Jalali calendar
 dayjs.locale("fa");
